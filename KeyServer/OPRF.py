@@ -41,12 +41,10 @@ class OPRF:
 
         return False
 
-    '''
     def exportCSV(self):
         data = {'Key': self.__key, 'Inverse': self.__inverseKey}
         df = pd.DataFrame(data)
         df.to_csv(self.filename, index=False)
-    '''
 
     def importCSV(self):
         df = pd.read_csv(self.filename)
